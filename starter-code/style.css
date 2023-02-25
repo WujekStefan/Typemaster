@@ -324,16 +324,18 @@ select {
   }
   
   .hero {
-    min-height: 40vh;
     margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 0;
+    grid-template-columns: (1fr 1fr);
   }
 
   .hero__img {
-    translate: 38% 0;
+    translate: 20% 0;
+  }
+
+  .hero__img img{
+    width: 100%;
+    height: 425px;
   }
 
   .about {
@@ -376,14 +378,11 @@ select {
 
   .footer {
     padding: 3rem;
-  }
-  
-  .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 6rem;
   }
-
+  
   .footer__title {
     text-align: start;
     font-size: 1.5rem;
@@ -414,7 +413,7 @@ select {
 @media (min-width:769px) {
   .header {
     min-height: 50vh;
-    padding: 5rem;
+    padding: 7rem;
     max-width: 1440px;
     margin-inline: auto;
   }
@@ -425,14 +424,32 @@ select {
   }
   
   .hero {
-    margin-top: 4rem;
-    display: flex;
-    align-items: center;
+    margin-top: 0;
+    gap: 0;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .hero__container {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+  }
+
+  .hero__img {
+    grid-column: 4 / span 4;
+    grid-row: 1 / span 2;
+    translate: 0 0;
+  }
+
+  .hero__square {
+    background: url('/starter-code/assets/shared/pattern-square.svg') no-repeat center center/cover;
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 1;
+    translate: 50% 0;
   }
   
-  .hero__img {
-    translate: 38% 0;
-  }
+  
 
   .about {
     min-height: 60vh;
@@ -441,5 +458,67 @@ select {
   
   .container {
     gap: 2rem;
+  }
+  
+  .about__image {
+    width: 100%;
+  }
+  
+  .about__container:first-child {
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    translate: 0 0;
+  }
+
+  .about__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+  
+  .about__title {
+    font-size: 2rem;
+    text-align: start;
+    padding-block: 4rem;
+    line-height: 2.5rem;
+  }
+  
+  .about__description {
+    text-align: start;
+    line-height: 1.5rem;    
+  }
+
+  .footer {
+    padding: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 6rem;
+  }
+  
+  .footer__title {
+    text-align: start;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 6.5rem;
+  }
+  
+  .footer__description {
+    text-align: start;
+    line-height: 1.5rem;
+    padding-bottom: 0;
+  }
+  
+  .footer__logo {
+    height: 65px;
+    margin-bottom: 2rem;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
   }
 }
