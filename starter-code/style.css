@@ -199,6 +199,9 @@ select {
   border-radius: 1.25rem;
 }
 
+.blendmode {
+  background-color: #F16718;
+}
 
 /* Block */
 
@@ -214,6 +217,15 @@ select {
   border: none;
   line-height: 162%;
   cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: var(--clr-primary-200);
+  color: var(--clr-white);
+}
+
+.hero__button:hover {
+  background-color: var(--clr-primary-150);
 }
 
 .hero {
@@ -247,7 +259,7 @@ select {
 
 .about__container:first-child {
   translate: -3rem 0;
-  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
   opacity: 0.75;
 }
 
@@ -302,17 +314,24 @@ select {
     margin-inline: auto;
   }
   
+  .header__container {
+    margin-bottom: 3rem;
+  }
+
   .button {
     padding: 1.5rem;
     line-height: 100%; 
   }
   
   .hero {
-    margin-top: 4rem;
+    min-height: 40vh;
+    margin-top: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 0;
   }
-  
+
   .hero__img {
     translate: 38% 0;
   }
@@ -370,7 +389,7 @@ select {
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding-bottom: 1rem;
-    
+    padding-right: 6.5rem;
   }
   
   .footer__description {
@@ -380,7 +399,6 @@ select {
   }
   
   .footer__logo {
-    width: 65px;
     height: 65px;
     margin-bottom: 2rem;
   }
@@ -390,5 +408,38 @@ select {
     flex-direction: column;
     align-items: start;
     justify-content: start;
+  }  
+}
+
+@media (min-width:769px) {
+  .header {
+    min-height: 50vh;
+    padding: 5rem;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  
+  .button {
+    padding: 1.5rem;
+    line-height: 100%; 
+  }
+  
+  .hero {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero__img {
+    translate: 38% 0;
+  }
+
+  .about {
+    min-height: 60vh;
+    padding-inline: 2.5rem;
+  }
+  
+  .container {
+    gap: 2rem;
   }
 }

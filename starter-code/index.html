@@ -14,14 +14,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="flex justify-between items-center">
+      <div class="header__container flex justify-between items-center">
         <img
           src="/starter-code/assets/shared/logo.svg"
           alt="typemaster logo"
           class="header__logo"
         />
         <button
-          class="button bg-primary-300 text-primary-200 rounded-100 text-uppercase font-bold"
+          class="header__button button bg-primary-300 text-primary-200 rounded-100 text-uppercase font-bold"
         >
           Pre-order now
         </button>
@@ -40,7 +40,7 @@
           </p>
           <div class="hero__container flex items-center">
             <button
-              class="button bg-primary-100 text-white rounded-100 text-uppercase font-bold"
+              class="hero__button button bg-primary-100 text-white rounded-100 text-uppercase font-bold"
             >
               Pre-order now
             </button>
@@ -61,6 +61,7 @@
             media="(min-width:376px)"
           />
           <img
+            width="100%"
             src="/starter-code/assets/mobile/image-keyboard.jpg"
             alt=""
             class="rounded-300"
@@ -72,23 +73,29 @@
     <main>
       <section class="about">
         <div class="container flex">
-          <picture class="about__container">
-            <source
-              width="100%"
-              srcset="/starter-code/assets/desktop/image-phone-and-keyboard.jpg"
-              media="(min-width:1280px)"
-            />
-            <source
-              width="100%"
-              srcset="/starter-code/assets/tablet/image-phone-and-keyboard.jpg"
-              media="(min-width:376px)"
-            />
-            <img
-              src="/starter-code/assets/mobile/image-phone-and-keyboard.jpg"
-              alt=""
-              class="about__image rounded-300"
-            />
-          </picture>
+          <div class="blendmode rounded-300">
+            <picture class="about__container">
+              <source
+                width="100%"
+                srcset="
+                  /starter-code/assets/desktop/image-phone-and-keyboard.jpg
+                "
+                media="(min-width:1280px)"
+              />
+              <source
+                width="100%"
+                srcset="
+                  /starter-code/assets/tablet/image-phone-and-keyboard.jpg
+                "
+                media="(min-width:376px)"
+              />
+              <img
+                src="/starter-code/assets/mobile/image-phone-and-keyboard.jpg"
+                alt=""
+                class="about__image bg-primary-100 rounded-300"
+              />
+            </picture>
+          </div>
           <picture class="about__container">
             <source
               width="100%"
