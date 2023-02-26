@@ -50,6 +50,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: var(--ff-barlow);
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -293,13 +294,11 @@ select {
 
 .about__title {
   font-size: 2rem;
-  text-align: center;
   padding-block: 1rem;
   line-height: 2.5rem;
 }
 
 .about__description {
-  text-align: center;
   line-height: 1.5rem;
 }
 
@@ -308,14 +307,12 @@ select {
 }
 
 .footer__title {
-  text-align: center;
   font-size: 1.375rem;
   line-height: 1.375rem;
   padding-bottom: 1rem;
 }
 
 .footer__description {
-  text-align: center;
   line-height: 1.5rem;
   padding-bottom: 4rem;
 }
@@ -325,15 +322,7 @@ select {
   margin-bottom: 3rem;
 }
 
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer__copyright {
-  text-align: center;
   margin-inline: auto;
   padding-bottom: 1.5rem;
 }
@@ -446,8 +435,6 @@ select {
   }
   
   .footer__container {
-    display: flex;
-    flex-direction: column;
     align-items: start;
     justify-content: start;
   }
@@ -486,7 +473,7 @@ select {
   }
 
   .hero__square {
-    background: url('/starter-code/assets/shared/pattern-square.svg') no-repeat center center/cover;
+    background: url('assets/shared/pattern-square.svg') no-repeat center center/cover;
     grid-row: 1 / span 1;
     translate: 55% 0;
   }  
@@ -505,7 +492,7 @@ select {
   }
 
   .about__square {
-    background: url('/starter-code/assets/shared/pattern-square.svg') no-repeat center center/cover;
+    background: url('assets/shared/pattern-square.svg') no-repeat center center/cover;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
   }
@@ -545,13 +532,11 @@ select {
   
   .about__title {
     font-size: 2rem;
-    text-align: start;
     padding-block: 1rem;
     line-height: 40px;
   }
   
   .about__description {
-    text-align: start;
     line-height: 1.5rem;    
   }
 
@@ -581,13 +566,5 @@ select {
   .footer__logo {
     height: 65px;
     margin-bottom: 2rem;
-  }
-  
-  .footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-  }
-  
+  }  
 }

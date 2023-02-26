@@ -16,7 +16,7 @@
     <header class="header">
       <div class="header__container flex justify-between items-center">
         <img
-          src="/starter-code/assets/shared/logo.svg"
+          src="assets/shared/logo.svg"
           alt="typemaster logo"
           class="header__logo"
         />
@@ -53,18 +53,18 @@
           <source
             width="540px"
             height="480px"
-            srcset="/starter-code/assets/desktop/image-keyboard.jpg"
+            srcset="assets/desktop/image-keyboard.jpg"
             media="(min-width:1280px)"
           />
           <source
             width="100%"
             height="425px"
-            srcset="/starter-code/assets/tablet/image-keyboard.jpg"
+            srcset="assets/tablet/image-keyboard.jpg"
             media="(min-width:376px)"
           />
           <img
             width="100%"
-            src="/starter-code/assets/mobile/image-keyboard.jpg"
+            src="assets/mobile/image-keyboard.jpg"
             alt=""
             class="rounded-300"
           />
@@ -81,20 +81,16 @@
             <picture class="about__container">
               <source
                 width="100%"
-                srcset="
-                  /starter-code/assets/desktop/image-phone-and-keyboard.jpg
-                "
+                srcset="assets/desktop/image-phone-and-keyboard.jpg"
                 media="(min-width:1280px)"
               />
               <source
                 width="100%"
-                srcset="
-                  /starter-code/assets/tablet/image-phone-and-keyboard.jpg
-                "
+                srcset="assets/tablet/image-phone-and-keyboard.jpg"
                 media="(min-width:376px)"
               />
               <img
-                src="/starter-code/assets/mobile/image-phone-and-keyboard.jpg"
+                src="assets/mobile/image-phone-and-keyboard.jpg"
                 alt=""
                 class="about__image bg-primary-100 rounded-300"
               />
@@ -103,27 +99,29 @@
           <picture class="about__container">
             <source
               width="100%"
-              srcset="/starter-code/assets/desktop/image-glass-and-keyboard.jpg"
+              srcset="assets/desktop/image-glass-and-keyboard.jpg"
               media="(min-width:1280px)"
             />
             <source
               width="100%"
-              srcset="/starter-code/assets/tablet/image-glass-and-keyboard.jpg"
+              srcset="assets/tablet/image-glass-and-keyboard.jpg"
               media="(min-width:376px)"
             />
             <img
-              src="/starter-code/assets/mobile/image-glass-and-keyboard.jpg"
+              src="assets/mobile/image-glass-and-keyboard.jpg"
               alt=""
               class="about__image rounded-300"
             />
           </picture>
           <div class="about__container flex flex-col">
             <h2
-              class="about__title font-bolder text-primary-200 text-uppercase"
+              class="about__title text-center font-bolder text-primary-200 text-uppercase"
             >
               Mechanical wireless keyboard
             </h2>
-            <p class="about__description text-primary-250 font-medium">
+            <p
+              class="about__description text-center text-primary-250 font-medium"
+            >
               The Typemaster keyboard boasts top-notch build and practical
               design. It offers a wide variety of switches and keycaps, along
               with reliable wireless connectivity.
@@ -134,68 +132,76 @@
     </main>
 
     <footer class="footer grid">
-      <div class="footer__container">
+      <div class="footer__container flex flex-col items-center justify-center">
         <img
-          src="/starter-code/assets/shared/icon-compatible.svg"
+          src="assets/shared/icon-compatible.svg"
           alt=""
           class="footer__logo bg-primary-100 rounded-200"
         />
-        <h3 class="footer__title text-primary-200 font-bolder text-uppercase">
+        <h3
+          class="footer__title text-center text-primary-200 font-bolder text-uppercase"
+        >
           Highly compatible
         </h3>
-        <p class="footer__description text-primary-250 font-medium">
+        <p class="footer__description text-center text-primary-250 font-medium">
           Easy to use and works well with all major computer brands, gaming
           consoles and mobile devices. Plug & play, no installation or driver
           needed.
         </p>
       </div>
-      <div class="footer__container">
+      <div class="footer__container flex flex-col items-center justify-center">
         <img
-          src="/starter-code/assets/shared/icon-bluetooth.svg"
+          src="assets/shared/icon-bluetooth.svg"
           alt=""
           class="footer__logo bg-primary-100 rounded-200"
         />
-        <h3 class="footer__title text-primary-200 font-bolder text-uppercase">
+        <h3
+          class="footer__title text-center text-primary-200 font-bolder text-uppercase"
+        >
           Wireless with bluetooth
         </h3>
-        <p class="footer__description text-primary-250 font-medium">
+        <p class="footer__description text-center text-primary-250 font-medium">
           Powerful 2.4G RF technology allows you to connect the cordless
           keyboard from up to 30ft away. Simply plug the unifying receiver into
           your computer.
         </p>
       </div>
-      <div class="footer__container">
+      <div class="footer__container flex flex-col items-center justify-center">
         <img
-          src="/starter-code/assets/shared/icon-battery.svg"
+          src="assets/shared/icon-battery.svg"
           alt=""
           class="footer__logo bg-primary-100 rounded-200"
         />
-        <h3 class="footer__title text-primary-200 font-bolder text-uppercase">
+        <h3
+          class="footer__title text-center text-primary-200 font-bolder text-uppercase"
+        >
           High capacity battery
         </h3>
-        <p class="footer__description text-primary-250 font-medium">
+        <p class="footer__description text-center text-primary-250 font-medium">
           High capacity battery Equipped with a long-lasting built-in battery,
           you’ll never have to spend a dime on replaceable ones.  Enjoy 40 hours
           of usage time between charges.
         </p>
       </div>
-      <div class="footer__container">
+      <div class="footer__container flex flex-col items-center justify-center">
         <img
-          src="/starter-code/assets/shared/icon-light.svg"
+          src="assets/shared/icon-light.svg"
           alt=""
           class="footer__logo bg-primary-100 rounded-200"
         />
-        <h3 class="footer__title text-primary-200 font-bolder text-uppercase">
+        <h3
+          class="footer__title text-center text-primary-200 font-bolder text-uppercase"
+        >
           RGB backlit modes
         </h3>
-        <p class="footer__description text-primary-250 font-medium">
+        <p class="footer__description text-center text-primary-250 font-medium">
           Choose from 4 backlight brightness levels and adjustable breathing
           speed. Each key glows intensely in the dark and helps you type in low
           light conditions.
         </p>
       </div>
     </footer>
-    <div class="footer__copyright">
+    <div class="footer__copyright text-center">
       <span class="text-primary-250">
         <span class="font-bold text-center">Typemaster 2021</span>
         | All Rights Reserved
