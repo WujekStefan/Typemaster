@@ -51,7 +51,7 @@
         </div>
         <picture class="hero__img">
           <source
-            width="100%"
+            width="540px"
             height="480px"
             srcset="/starter-code/assets/desktop/image-keyboard.jpg"
             media="(min-width:1280px)"
@@ -75,7 +75,8 @@
 
     <main>
       <section class="about">
-        <div class="container flex">
+        <div class="container grid">
+          <div class="about__square rounded-300"></div>
           <div class="blendmode rounded-300">
             <picture class="about__container">
               <source
@@ -116,19 +117,22 @@
               class="about__image rounded-300"
             />
           </picture>
-        </div>
-        <div class="about__container flex flex-col">
-          <h2 class="about__title font-bolder text-primary-200 text-uppercase">
-            Mechanical wireless keyboard
-          </h2>
-          <p class="about__description text-primary-250 font-medium">
-            The Typemaster keyboard boasts top-notch build and practical design.
-            It offers a wide variety of switches and keycaps, along with
-            reliable wireless connectivity.
-          </p>
+          <div class="about__container flex flex-col">
+            <h2
+              class="about__title font-bolder text-primary-200 text-uppercase"
+            >
+              Mechanical wireless keyboard
+            </h2>
+            <p class="about__description text-primary-250 font-medium">
+              The Typemaster keyboard boasts top-notch build and practical
+              design. It offers a wide variety of switches and keycaps, along
+              with reliable wireless connectivity.
+            </p>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="footer grid">
       <div class="footer__container">
         <img
@@ -190,10 +194,12 @@
           light conditions.
         </p>
       </div>
+    </footer>
+    <div class="footer__copyright">
       <span class="text-primary-250">
         <span class="font-bold text-center">Typemaster 2021</span>
         | All Rights Reserved
       </span>
-    </footer>
+    </div>
   </body>
 </html>
